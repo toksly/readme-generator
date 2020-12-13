@@ -21,8 +21,7 @@ const questions = [
 	{
 		type: "input",
 		name: "tableOfContents",
-		message: "Enter your Table of content?",
-	},
+		message: "Enter your Table of content?",De
 	{
 		type: "input",
 		name: "installation",
