@@ -21,7 +21,8 @@ const questions = [
 	{
 		type: "input",
 		name: "tableOfContents",
-		message: "Enter your Table of content?",De
+		message: "Enter your Table of content?",
+	},
 	{
 		type: "input",
 		name: "installation",
@@ -73,8 +74,15 @@ function ask() {
 				"## Project description" + "\n\n" + data.description + "\n\n",
 				"## Table of content" + "\n" + data.tableOfContents + "\n\n",
 				"## Installation" + "\n" + data.installation + "\n\n",
+				"## Link to walkthrough video" +
+					"\n" +
+					"https://drive.google.com/file/d/1-B-FrvvLSP6qjZbjlihyu3wcbWolPuI0/view" +
+					"\n\n",
 				"## Usage" + "\n" + data.usage + "\n\n",
-				"## License" + "\n" + data.licence + "\n\n",
+				"## License" +
+					"\n" +
+					`![](https://img.shields.io/badge/Licence-${data.licence}-green)` +
+					"\n\n",
 				"## Contributing" + "\n" + data.contributing + "\n\n",
 				"## Tests" + "\n" + data.tests,
 			]);
